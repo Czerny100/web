@@ -6,116 +6,92 @@
   <link rel="stylesheet" href="css/style.css"> <!-- css파일 링크 -->
 </head>
 <body>
-<header> <!-- 제목이랑 네비게이션 들어갈 부분 -->
-  <hgroup>
-    <h1>Environmental Brand</h1>
-    <h2>Your Company Tagline Here</h2>
-  </hgroup>
-  <nav>
-    <ul> <!-- ul 대신 ol을 쓰면 넘버링 가능 -->
-      <li>Home</li>
-      <li>Services</li>
-      <li>Portfolio</li>
-      <li>Blog</li>
-      <li>About Us</li>
-    </ul>
-  </nav>
-</header>
-
-<!-- 본문 2개의 섹션으로 구분 -->
-<section>
-  <p><img src="images/banner.jpg"></p>
-  <div>
-    <img src="images/light.jpg"><p>Bright Ideas One of our services is our bright ideas and details.</p>
-    <img src="images/home_icon.jpg"><p>Project Quote We provide you with a detailed price quote.</p>
-    <img src="images/rpt.jpg"><p>Environment We care about the environment and our projects.</p>
+  <div id = "wrapper">
+    <header> <!-- 제목이랑 네비게이션 들어갈 부분 -->
+      <hgroup>
+        <h1>Environmental Brand</h1>
+        <h2>Your Company Tagline Here</h2>
+      </hgroup>
+      <nav>
+        <ul> <!-- ul 대신 ol을 쓰면 넘버링 가능 -->
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- 본문 2개의 섹션으로 구분, slogan이랑 mainContents -->
+    <section id = "slogan">
+      <p><img src="images/banner.jpg" alt="banner image"></p>
+      <div>
+        <p><img class="icon" src="images/light.jpg" alt="light icon"><span class="desc"><em>Bright Ideas</em> One of our services is our bright ideas and details.</span></p>
+        <p><img class="icon" src="images/home_icon.jpg" alt="home icon"><span class="desc"><em>Project Quote</em> We provide you with a detailed price quote.</span></p>
+        <p><img class="icon" src="images/rpt.jpg" alt="recycle icon"><span class="desc"><em>Environment</em> We care about the environment and our projects.</span></p>
+      </div>
+    </section>
+    <section id = "mainContents">
+      <aside> <!-- 어사이드 -->
+        <article class = "importantBox">
+          <header><h1>CLIENT TESTIMONIALS</h1></header>
+          <div>
+            <blockquote> <!--인용문 태그-->
+              <p>"Best services ever! I'd be lost without your company. Your company was great to work with and we look forward to dealing with you in the future.</p>
+              <p>I would recommend your great services to anyone. I appreciate all your help and your passion for the environment."</p>
+            </blockquote>
+            <footer>- Potential Client Testimonial</footer>
+          </div>
+        </article>
+        <article>
+          <header><h1>Nice little Sidebar</h1></header>
+          <p>This is where you can put some services text fillers.</p>
+          <p>The more you put the better</p>
+        </article>
+        <article>
+          <header><h1>Nice little Sidebar</h1></header>
+          <p>This is where you can put some services text fillers.</p>
+          <p>The more you put the better</p>
+        </article>
+        <div id = "email_list_form">
+          Join Our Email List
+        </div>
+      </aside>
+      <div id = "news">
+        <!-- 두개의 아티클로 나눌것임 -->
+        <article>
+          <header><h1>Leader in E-Commerce Solutions</h1></header>
+          <p>We are an eco based web and logo design company. Our main focus is working with companies that are green friendly. We specialize in getting businesses onto the Internet quickly and professionally. From custom logo identity, to fully branded web and print, we can take your business to success!</p>
+          <p>This area is where your intro text can go, and this is what your text links will look like.</p>
+        </article>
+        <hr>
+        <article>
+          <header><h1>Global e-Commerce Expansion</h1></header>
+          <p>2010 Holiday Season To Date vs. Corresponding Days* in 2009<br>
+            Non-Travel (Retail) Spending<br>
+            Excludes Auctions and Large Corporate Purchases<br>
+            Total U.S. ??Home/Work/University Locations<br>
+            Source: comScore, Inc.</p>
+            <p class = "button"><a href="#">LEARN MORE</a></p>
+        </article>
+        <div id = "bottomBox">
+          <p><img class="icon" src="images/home_icon.jpg" alt="home icon"><span class="desc">We are great to work with on projects.</span></p>
+          <p><img class="icon" src="images/light.jpg" alt="light icon"><span class="desc">We have great ideas that will benefit you.</span></p>
+          <p><img class="icon" src="images/rpt.jpg" alt="recycle icon"><span calss="desc">We care about the environment a lot.</span></p>
+        </div>
+      </div>
+    </section>
+    <!-- 푸터부분 -->
+    <footer>
+      <p>Copyright © 2008 Your Company Name</p>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <p>Eco Web Design by <a href="http://studio7designs.com">Studio7designs</a></p>
+    </footer>
   </div>
-</section>
-
-
-<!-- 어사이드 -->
-// Side Contents 1
-
-CLIENT TESTIMONIALS
-
-"Best services ever! I'd be lost without your company. Your company was great to work with and we look forward to dealing with you in the future.
-
-I would recommend your great services to anyone. I appreciate all your help and your passion for the environment."
-
-- Potential Client Testimonial
-
-
-// Side Contents 2
-
-Nice little Sidebar
-
-This is where you can put some services text fillers.
-The more you put the better
-
-
-
-// Side Contents 3
-
-Nice little Sidebar
-
-This is where you can put some services text fillers.
-The more you put the better
-
-
-// Side Contetns 4
-Join Our Email List
-
-<!-- 두개의 아티클로 나눌것임 -->
-// Main Contents 1
-
-Leader in E-Commerce Solutions
-
-We are an eco based web and logo design company. Our main focus is working with companies that are green friendly. We specialize in getting businesses onto the Internet quickly and professionally. From custom logo identity, to fully branded web and print, we can take your business to success!
-
-This area is where your intro text can go, and this is what your text links will look like.
-
-
-// Main Contents 2
-
-Global e-Commerce Expansion
-
-2010 Holiday Season To Date vs. Corresponding Days* in 2009
-Non-Travel (Retail) Spending
-Excludes Auctions and Large Corporate Purchases
-Total U.S. ??Home/Work/University Locations
-Source: comScore, Inc.
-
-          Millions($)
-      2009		2010		Percent Change
-November 1 ??29			$12,008		$13,553		13%
-Thanksgiving Day (Nov. 25)	$318		$407		28%
-Black Friday (Nov. 26)		$595		$648		9%
-Weekend (Nov. 27-28)		$805		$886		10%
-Cyber Monday (Nov. 29)		$887		$1,028		16%
-
-LEARN MORE
-
-<!-- 어사이드를 반복할순 없으니 div로 분리할거임 -->
-// Sub Slogan
-
-We are great to work with on projects.
-
-We have great ideas that will benefit you.
-
-We care about the environment a lot.
-
-<!-- 푸터부분 -->
-// Copyright
-
-Copyright © 2008 Your Company Name
-
-
-// Foot Links <!-- 링크의 나열, 리스트로 구조 -->
-
-Home
-Services
-Portfolio
-Blog
-Eco Web Design by Studio7designs
 </body>
 </html>

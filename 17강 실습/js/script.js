@@ -1,6 +1,7 @@
 window.addEventListener('load', init, false);
 
 function init(event) {
+		//이벤트 감지
 	var dataClass = document.getElementsByClassName("data");
 	var toggleTextClass = document.getElementsByClassName("toggleText");
 	var html1Class = document.getElementsByClassName("html1");
@@ -22,6 +23,7 @@ function folding (event) {
 	init.onwindowText = true;
 }
 
+//토글 버튼
 function targeting (event) {
 	event.stopPropagation();
 	if (init.onToggleText == true) {
